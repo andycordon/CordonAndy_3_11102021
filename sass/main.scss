@@ -4,10 +4,15 @@
 @import "./utils/mixins";
 @import "./utils/variables";
 @import "./utils/keyframes";
+@import "./utils/functions";
 
 
 @import "./components/loader";
+@import "./components/search-bar";
 @import "./components/button";
+@import "./components/label";
+@import "./components/heart";
+
 
 @import "./layout/header-index";
 @import "./layout/header-restaurants";
@@ -15,4 +20,4 @@
 
 
 @import "./pages/index";
-@import "./pages/la-palette-du-gout";
+@import "./pages/restaurants";

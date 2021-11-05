@@ -47,6 +47,10 @@
                 font-size: 1.6rem;
             }  
         }
+
+        &__image {
+            height: 350px;
+        }
     }
 }
 
@@ -63,7 +67,11 @@
             &__icon {
                 margin: 35px 0 0 20px;
                 font-size: 2rem;
-            }  
+            }
+        }
+
+        &__image {
+            height: 513px;
         }
     }
 }

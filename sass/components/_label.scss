@@ -1,0 +1,14 @@
+//ETIQUETTES "NEW" DES MENUS INDEX
+
+.label {
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 15px;
+    background: $color-tertiary;
+    color: darken($color-tertiary, 30);
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 2px;
+    animation: label 2500ms linear infinite;
+    }

@@ -1,81 +1,16 @@
-.header-index {
-
-    &__nav {
-
-        &__location {
-    //BARRE DE RECHERCHE HEADER INDEX
-            &__city {
-            background: $background-color-primary;
-            border:none;
-            font-size: 1rem;
-            font-weight: 900;
-            width: 150px;
-            height: 100%;
-            padding: 15px;
-            }
-        }
-    }
-
-    &__presentation {
-//BOUTON DU HEADER INDEX
-        &__button {
-        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-        box-shadow: $shadow;
-        border-radius: $round-buton;
-        padding: 15px;
-        margin: 30px auto 0 auto;
-        width: 50%;
-        @include link-style-secondary;
-        transition: $transform;
-
-            &:hover {
-                background: linear-gradient(to bottom right, lighten($color-secondary, 6), lighten($color-primary, 6));
-                box-shadow: 0 5px 8px 0 #777;
-            }    
-        }
-    }
-}
-
-//ETIQUETTE "NOUVEAU" DES RESTAURANTS INDEX
-.restaurants {
-
-    &__articles {
-
-        &__article {
-
-            &__new {
-            position: absolute;
-            margin-left: -90px;
-            margin-top: 15px;
-            background: $color-tertiary;
-            color: darken($color-tertiary, 30);
-            font-size: 0.9rem;
-            font-weight: 600;
-            padding: 5px 10px;
-            border-radius: 2px;
-            animation: label 2500ms linear infinite;
-            }
-        }
-    }
-}
-
-
-//BOUTON DES MENUS
-.main {
-
-    &__button {
+//BOUTON "EXPLORER NOS RESTAURANTS" INDEX ET "COMMANDER" RESTAURANT 
+.button {
     background: linear-gradient(to bottom right, $color-secondary, $color-primary);
     box-shadow: $shadow;
     border-radius: $round-buton;
     padding: 15px;
     margin: 30px auto 0 auto;
     width: 50%;
-    transition: $transform;
     @include link-style-secondary;
+    transition: $transform;
 
-        &:hover {
-            background: linear-gradient(to bottom right, lighten($color-secondary, 6), lighten($color-primary, 6));
-            box-shadow: 0 5px 8px 0 #777;
-        }    
-    }
+    &:hover {
+        background: linear-gradient(to bottom right, lighten($color-secondary, 6), lighten($color-primary, 6));
+        box-shadow: 0 5px 8px 0 #777;
+    }    
 }

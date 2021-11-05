@@ -1,0 +1,25 @@
+.heart {
+    @include flex-center-align;
+    cursor: pointer;
+    font-size: 1.4rem;
+    
+
+    &:hover > .heart-empty {
+        opacity: 0;
+    }
+
+    .heart-full {
+        position: absolute;
+        opacity: 0;
+
+
+        &:hover {
+            animation: heart 1000ms ease-in-out;
+            animation-fill-mode: both;
+            background: -webkit-linear-gradient(bottom right, $color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+} 

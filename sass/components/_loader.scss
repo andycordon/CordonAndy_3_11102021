@@ -3,9 +3,8 @@
     width: 100%;
     height: 100%;
     display: flex;
-    background: $background-color-secondary;
+    background: rgb(245, 245, 245, 0.9);
     position: fixed;
-    opacity: .9;
     z-index: 1;
     animation: loader 750ms;
     animation-delay: 1850ms;

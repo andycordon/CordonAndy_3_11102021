@@ -1,6 +1,7 @@
 .footer {
     background-color: $background-color-footer;
     padding: 20px;
+    margin-top: auto;
     
 
     &__logo {
@@ -23,6 +24,7 @@
             display: flex;
             @include link-style-secondary;
             transition: $transform;
+            
 
             &:hover {
                 color:$color-tertiary;

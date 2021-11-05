@@ -3,7 +3,7 @@
     background-color: $background-color-secondary;
     border-radius: 40px 40px 0 0;
     width: 100%;
-    margin-top: -50px;
+    margin: -50px 0 0 0;
     padding-bottom: 50px;
     position: relative;
 
@@ -15,23 +15,6 @@
 
         &__title {
             font-family: $title-family;
-        }
-
-        &__heart{
-            position: relative;
-            cursor: pointer;
-            font-size: 1.5rem;
-            margin-right: 20px;
-            
-            &:hover > .fa-heart {
-                animation: heart 1500ms ease-in-out;
-                display: inline-block;
-                opacity: 1;
-                background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: red;
-            }
         }
     }
 
@@ -59,7 +42,6 @@
         }
     
     &__meal {
-        overflow: hidden;
         cursor: pointer;
         transition: padding-right 450ms ease-in-out;
         
@@ -102,27 +84,28 @@
             }
 
         &__contents {
+            overflow: hidden;
             position: relative;
             margin:20px 10px;
             background-color: $white; 
             border-radius: 15px;
             padding: 15px 10px;
             box-shadow: $shadow;
-            transition: padding-right 500ms ease-in-out;
+            transition: $transform;
 
             &__check {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 background-color: $color-tertiary;
-                width: 0px;
+                width: 50px;
                 height: 57px;
+                margin-right: -70px;
                 border-radius: 0 15px 15px 0;
                 position: absolute;
-                padding: 10px 6px;
+                padding: 10px;
                 top: 0; right: 0px;
                 transition: $transform;
-                opacity: 0;     
 
                 &__icon-check {
                     color: $white;
@@ -136,10 +119,7 @@
             }
 
             &:hover > &__check {
-                opacity: 1;
-                right: 0px;
-                width: 50px;
-                padding: 10px;
+                margin-right: 0px;
             }
 
             &:hover .fa-check-circle {

@@ -80,22 +80,6 @@
                 @include flex-between;
                 align-items: center;
                 padding: 10px 20px 15px 10px;
-    
-                &__heart {
-                    position: relative;
-                    cursor: pointer;
-                    font-size: 1.5rem;
-                    
-                    &:hover {
-                        animation: heart 1500ms ease-in-out;
-                        display: inline-block;
-                        opacity: 1;
-                        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        color: red;
-                    }
-                }
             }
         }
     }
