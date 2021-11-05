@@ -1,0 +1,140 @@
+.functioning {
+    padding: $padding-bloc;
+
+    &__title {
+        margin: $margin-title;
+    }
+
+    &__steps {
+        margin: 20px;
+
+        &__step {
+            background-color: $background-color-secondary;
+            margin: 20px 0 0 15px;
+            height: 75px;
+            box-shadow: $shadow;
+            border-radius: $round-buton;
+            cursor: pointer;
+            @include flex-align;
+            transition: $transform;
+
+            &__number {
+                background-color: $color-primary;
+                color: $white;
+                border-radius: $round-buton;
+                width: 25px;
+                height: 25px;
+                margin: 0 15px 0 -15px;
+                @include flex-center-align;  
+            }
+
+            &__icon {
+                font-size: 1.2rem;
+                color: $color-icon;
+                transition: $transform;
+            }
+            
+            &:hover > &__icon {
+                color: $color-primary;
+            }
+            
+            &__text {
+                margin-left: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.restaurants {
+    padding: $padding-bloc;
+    background: $background-color-secondary;
+
+    &__title {
+        margin: $margin-title;
+    }
+
+    &__articles {
+
+        &__article {
+            background: $white;
+            margin: 20px 20px 20px 15px;
+            box-shadow: $shadow;
+            border-radius: 15px;  
+            transition: $transform;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+      
+        
+            &__image {
+                width: 100%;
+                height: 175px;
+                border-radius: 15px 15px 0 0;
+                object-fit: cover;
+                object-position: bottom;
+            }
+
+            &__contents {
+                @include flex-between;
+                align-items: center;
+                padding: 10px 20px 15px 10px;
+    
+                &__heart {
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 1.5rem;
+                    
+                    &:hover {
+                        animation: heart 1500ms ease-in-out;
+                        display: inline-block;
+                        opacity: 1;
+                        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//TABLETTE STYLE
+@media (min-width:768px) {
+    .functioning {
+
+        &__steps {
+            display: grid;
+            position: relative;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &__step {
+
+                &__number {                    
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;    
+                    margin: -80px 0 0 -15px;
+                }
+
+                &__icon {
+                    margin-left: 10px;
+                }
+                
+                &__text {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .restaurants {
+        
+        &__articles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

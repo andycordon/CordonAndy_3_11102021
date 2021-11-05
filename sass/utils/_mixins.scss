@@ -1,0 +1,61 @@
+@mixin header-logo {
+    font-size: $logo-size;
+    font-family: $title-family;
+    padding: 5px 0;
+    box-shadow: $shadow;
+}
+
+@mixin header-logo-restaurants {
+    font-size: $logo-size;
+    font-family: $title-family;
+    padding: 5px 0;
+}
+
+@mixin header-location {
+    background-color: $background-color-primary;
+}
+
+@mixin link-style-primary {
+    text-decoration:none;
+    color: $black;
+}
+
+@mixin link-style-secondary {
+    text-decoration:none;
+    color: $white;
+}
+
+//MIXIN FLEX
+@mixin flex-center {
+    display: $flex;
+    justify-content: $center;
+}
+
+@mixin flex-between {
+    display: $flex;
+    justify-content: space-between;
+}
+
+@mixin flex-align {
+    display: $flex;
+    align-items: $center;
+}
+
+@mixin flex-center-align {
+    display: $flex;
+    justify-content: $center;
+    align-items: $center;
+}
+
+@mixin flex-row-align {
+    display: $flex;
+    flex-direction: row;
+    align-items: $center;
+}
+
+
+
+
+
+
+

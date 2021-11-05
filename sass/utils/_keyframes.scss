@@ -1,0 +1,70 @@
+//LOADER INDER
+@keyframes loader {
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+} 
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    } 
+}
+
+@keyframes icon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+//LABEL NEW INDEX
+@keyframes label {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    } 
+}
+
+//HEART ANIMATION
+@keyframes heart {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    } 
+}
+
+//APPARITION DES MENUS
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//ARRIVER DES MENUS
+@keyframes unrolled {
+    0% {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

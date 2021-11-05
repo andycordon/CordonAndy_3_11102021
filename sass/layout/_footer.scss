@@ -1,0 +1,54 @@
+.footer {
+    background-color: $background-color-footer;
+    padding: 20px;
+    
+
+    &__logo {
+        font-size: $logo-footer-size;
+        font-family: $title-family;
+        @include link-style-secondary;
+        transition: $transform;
+
+        &:hover {
+            color:$color-tertiary;
+        }
+    }
+
+    &__links {
+        margin: 15px 0; 
+        
+    
+        &__link {
+            margin:10px 0;
+            display: flex;
+            @include link-style-secondary;
+            transition: $transform;
+
+            &:hover {
+                color:$color-tertiary;
+            }
+
+            &__icon {
+                width: 50px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+//TABLETTE STYLE
+@media (min-width:768px){
+    .footer {
+        @include flex-row-align;
+
+        &__links {
+            @include flex-row-align;
+            
+        
+            &__link {
+                margin-left: 30px;
+                align-items: $center;
+            }
+        }
+    }
+}

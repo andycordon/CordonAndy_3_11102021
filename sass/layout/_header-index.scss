@@ -1,0 +1,66 @@
+.header-index {
+
+    &__nav {
+
+        &__logo {
+            @include flex-center;
+            @include header-logo;
+            transition: $transform;
+
+            &:hover {
+                color: $color-primary;
+            }
+            
+        }
+
+        &__location {
+            @include flex-center-align;
+            @include header-location;
+        }
+    }
+
+    &__presentation {
+        background-color: $background-color-secondary;
+        padding: 40px 0 60px 0;
+        
+
+        &__title {
+            text-align: $center;
+        }
+
+        &__text {
+            text-align: $center;
+            margin-top: 10px;
+        }
+
+        &__button {
+            @include flex-center;
+        }
+    }
+}
+
+//TABLETTE STYLE
+@media (min-width:768px){
+    .header-index {
+
+        &__nav {
+    
+            &__logo {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+
+//DESKTOP STYLE
+@media (min-width:992px){
+    .header-index {
+
+        &__nav {
+    
+            &__logo {
+                font-size: 4rem;
+            }
+        }
+    }
+}

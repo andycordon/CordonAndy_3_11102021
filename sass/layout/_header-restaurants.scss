@@ -1,0 +1,69 @@
+//HEADER--RESTAURANTS
+.header {
+
+    &__nav {
+        transition: all 400ms ease-in-out;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        &__logo {
+        @include flex-center;
+        @include header-logo-restaurants;
+        @include link-style-primary;
+        color: inherit;
+
+        }
+
+        &__icon {
+            position: absolute;
+            margin: 15px 0 0 20px;
+            font-size: 1.2rem;
+            @include link-style-primary;
+            color: inherit;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+//TABLETTE STYLE
+@media (min-width:768px){
+    .header {
+
+        &__nav {
+    
+            &__logo {
+                font-size: 2.8rem;
+            }
+        
+            &__icon {
+                margin: 22px 0 0 20px;
+                font-size: 1.6rem;
+            }  
+        }
+    }
+}
+
+//DESKTOP STYLE
+@media (min-width:992px){
+    .header {
+
+        &__nav {
+    
+            &__logo {
+                font-size: 4rem;
+            }
+
+            &__icon {
+                margin: 35px 0 0 20px;
+                font-size: 2rem;
+            }  
+        }
+    }
+}

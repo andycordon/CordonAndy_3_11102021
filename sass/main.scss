@@ -1,0 +1,18 @@
+@import "./base/bases";
+
+
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./utils/keyframes";
+
+
+@import "./components/loader";
+@import "./components/button";
+
+@import "./layout/header-index";
+@import "./layout/header-restaurants";
+@import "./layout/footer";
+
+
+@import "./pages/index";
+@import "./pages/la-palette-du-gout";
