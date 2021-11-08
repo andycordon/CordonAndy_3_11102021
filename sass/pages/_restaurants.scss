@@ -16,6 +16,10 @@
         &__title {
             font-family: $title-family;
         }
+
+        &__heart {
+            margin-right: 20px
+        }
     }
 
     &__button {
@@ -43,7 +47,6 @@
     
     &__meal {
         cursor: pointer;
-        transition: padding-right 450ms ease-in-out;
         
         .unrolled-1 {
             animation: unrolled 500ms ease-in-out;

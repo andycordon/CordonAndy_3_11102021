@@ -14,7 +14,7 @@
 
 
         &:hover {
-            animation: heart 1000ms ease-in-out;
+            animation: heart 800ms ease-in-out;
             animation-fill-mode: both;
             background: -webkit-linear-gradient(bottom right, $color-primary, $color-secondary);
             background-clip: text;

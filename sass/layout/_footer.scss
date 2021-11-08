@@ -24,14 +24,13 @@
             display: flex;
             @include link-style-secondary;
             transition: $transform;
-            
 
             &:hover {
                 color:$color-tertiary;
             }
 
             &__icon {
-                width: 50px;
+                width: 20px;
                 margin-right: 10px;
             }
         }

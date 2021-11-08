@@ -169,7 +169,7 @@ body a {
   opacity: 0;
 }
 .heart .heart-full:hover {
-  animation: heart 1000ms ease-in-out;
+  animation: heart 800ms ease-in-out;
   animation-fill-mode: both;
   background: -webkit-linear-gradient(bottom right, #9356dc, #ff79da);
   background-clip: text;
@@ -304,7 +304,7 @@ body a {
   color: #99e2d0;
 }
 .footer__links__link__icon {
-  width: 50px;
+  width: 20px;
   margin-right: 10px;
 }
 
@@ -440,6 +440,9 @@ body a {
 .main__restaurant__title {
   font-family: "shrikhand";
 }
+.main__restaurant__heart {
+  margin-right: 20px;
+}
 .main__button {
   display: flex;
   justify-content: center;
@@ -461,7 +464,6 @@ body a {
 }
 .meals__meal {
   cursor: pointer;
-  transition: padding-right 450ms ease-in-out;
 }
 .meals__meal .unrolled-1 {
   animation: unrolled 500ms ease-in-out;
