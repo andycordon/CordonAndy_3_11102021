@@ -97,9 +97,7 @@
             transition: $transform;
 
             &__check {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-center-align;
                 background-color: $color-tertiary;
                 width: 50px;
                 height: 57px;
