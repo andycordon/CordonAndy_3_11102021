@@ -18,6 +18,10 @@
             @include flex-align;
             transition: $transform;
 
+            &:hover {
+                background: lighten($color-primary, 25);
+            }
+
             &__number {
                 background-color: $color-primary;
                 color: $white;

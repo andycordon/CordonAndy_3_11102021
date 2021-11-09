@@ -344,6 +344,9 @@ body a {
   align-items: center;
   transition: all 400ms ease-in-out;
 }
+.functioning__steps__step:hover {
+  background: #d7c0f2;
+}
 .functioning__steps__step__number {
   background-color: #9356dc;
   color: #fff;
